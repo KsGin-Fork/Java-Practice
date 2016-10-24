@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class C11_5 {
     public static void main(String[] args){
         Course course = new Course("数据结构");
-        course.addStudent("杨帆");
-        course.addStudent("李一斐");
+        course.addStudent("Amnnny");
+        course.addStudent("KsGin");
         System.out.println(course.getCourseName() + "课程学生为:");
         String[] a = course.getStudents();
         for (int i = 0 ; i < course.getNumberOfStudents() ; i++){
