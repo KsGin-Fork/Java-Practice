@@ -7,16 +7,62 @@ import java.util.Arrays;
  */
 
 
-public class E {
-        public static void main(String[] args){
-            String MaxLong = "" + Long.MAX_VALUE;
-            int count = 0;
-            for (BigInteger i = new BigInteger(MaxLong).add(BigInteger.ONE); count < 10 ; i = i.add(BigInteger.ONE)){
-                if (i.remainder(new BigInteger("5")).equals(BigInteger.ZERO) || i.remainder(new BigInteger("6")).equals(BigInteger.ZERO)){
-                    System.out.println(i);
-                    count++;
-                }
-            }
-        }
+import java.util.Scanner;
+
+class Circle{
+    double radius;
+
+    public Circle(){
+
+    }
+
+    public Circle(double radius) {
+        // TODO 自动生成的构造函数存根
+        this.radius=radius;
+    }
+
+    public  double getradius(){
+        return radius;
+    }
+
+    public double getArea(){
+        return 3.14*getradius()*getradius();
+    }
+
+}
+class GeometricObject1 extends Circle implements Comparable{
+    public GeometricObject1(double radius) {
+        // TODO 自动生成的构造函数存根
+        super(radius);
+    }
+
+    public int compareTo(Object o) {
+        // TODO 自动生成的方法存根
+        if (getArea()>((GeometricObject1) o).getArea())
+            return 1;
+        else
+            return -1;
+    }
+
+    public boolean equals(Object c){
+        if (this.radius == ((GeometricObject1)c).radius)
+            return true;
+        else
+            return false;
+    }
+
+}
+public class E{
+
+    public static void main(String[] args) {
+        // TODO 自动生成的方法存根
+        Scanner input=new Scanner(System.in);
+        double radius1=input.nextDouble();
+        double radius2=input.nextDouble();
+        GeometricObject1 circle1=new  GeometricObject1(radius1);
+        GeometricObject1 circle2=new  GeometricObject1(radius2);
+        System.out.println(circle1.equals(circle2));
+    }
+
 
 }
