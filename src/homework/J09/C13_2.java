@@ -13,10 +13,10 @@ public class C13_2 {
         System.out.print("Please input two integer:");
         while (true) {
             try {
-                num1 = cin.nextInt();
-                num2 = cin.nextInt();
+                num1 = Integer.parseInt(cin.nextLine());
+                num2 = Integer.parseInt(cin.nextLine());
                 break;
-            } catch (InputMismatchException e) {
+            } catch (NumberFormatException e) {
                 System.out.print("Entered incorrectly!\nPlease input two integer number again:");
                 cin = new Scanner(System.in);
             }
