@@ -7,7 +7,7 @@ import java.util.Date;
  */
 public class C13_4 {
     public static void main(String[] args){
-        new Loan(-22,12,100);
+        new Loan(22,12,100);
     }
 }
 

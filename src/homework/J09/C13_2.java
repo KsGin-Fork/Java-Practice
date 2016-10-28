@@ -1,6 +1,5 @@
 package homework.J09;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
