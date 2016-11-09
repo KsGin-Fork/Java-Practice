@@ -13,7 +13,7 @@ public class G12_9 {
         jf.setLayout(new GridLayout(1,3));
         jf.setSize(600,150);
         for (int i = 0 ; i < 3 ; i++){
-            jf.add(new JLabel(new ImageIcon("image\\card\\"+(new Random().nextInt(54)+1)+".png")));
+            jf.add(new JLabel(new ImageIcon("image\\card\\"+(new Random().nextInt(53)+1)+".png")));
         }
         jf.setVisible(true);
     }
