@@ -7,8 +7,8 @@ import javafx.scene.shape.Circle;
  */
 public class M14_2 {
     public static void main(String[] args){
-        ComparableCircle circle1 = new ComparableCircle(12);
-        ComparableCircle circle2 = new ComparableCircle(16);
+        ComparableCircle circle1 = new ComparableCircle(-12);
+        ComparableCircle circle2 = new ComparableCircle(-16);
         System.out.println(circle1.compareTo(circle2) == 0 ? circle1 : circle2);
     }
 }
