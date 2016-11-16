@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1857856-ac91-4146-afa3-4d90eecb5d9e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Error/ShowFlowLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/homework/J11/G16_4.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HomeWork/Error/Circle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HomeWork/Error/E.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/HomeWork/Error/GeometricObject1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Error/E.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/HomeWork/homework/J10/G12_9.class" afterPath="$PROJECT_DIR$/out/production/HomeWork/homework/J10/G12_9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/homework/J11/G16_4.java" afterPath="$PROJECT_DIR$/src/homework/J11/G16_4.java" />
     </list>
     <ignored path="HomeWork.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -95,14 +88,14 @@
       <file leaf-file-name="G16_4.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/homework/J11/G16_4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="3">
+              <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#403#404#0" expanded="true" />
-                <element signature="e#429#430#0" expanded="true" />
+                <element signature="e#292#293#0" expanded="true" />
+                <element signature="e#348#349#0" expanded="true" />
+                <element signature="e#435#436#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1297,14 +1290,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/homework/J11/G16_4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="3">
+          <caret line="58" column="0" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#403#404#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
           </folding>
         </state>
       </provider>

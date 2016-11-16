@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.text.DecimalFormat;
 
 /**
  * Created by YangFan on 2016/11/16.
@@ -26,7 +27,7 @@ class Calculator extends JFrame{
     public void View(){
 
         this.setLayout(new GridLayout(2,1));
-        this.setSize(450,200);
+        this.setSize(460,150);
         JPanel jPanel1 = new JPanel(new FlowLayout());
         jPanel1.add(new JLabel("Number1:"));
         JTextField jf1 = new JTextField(7);
@@ -68,7 +69,9 @@ class Calculator extends JFrame{
                         result = n1 / n2; break;
                     default:break;
                 }
-                if (jf3.getText() != "") jf3.setText(result + "");
+                DecimalFormat format = new DecimalFormat();
+                format.setMaximumFractionDigits(4);
+                if (jf3.getText() != "") jf3.setText(format.format(result) + "");
             }
         };
 
