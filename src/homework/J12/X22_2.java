@@ -23,7 +23,6 @@ public class X22_2 {
             fr.close();
             // Matcher m = Pattern.compile("\\b(\\w+)\\b").matcher(buf);        //数字也在
             Matcher m = Pattern.compile("(?:\\b|'|\")([a-zA-Z\\-\\x0d\\x0a]{2,})(?:\\b|'|\")").matcher(buf);     //只是单词
-            System.out.println(buf);
             Set<String> strSet = new HashSet<>();
             while(m.find()){
                 strSet.add(m.group(1).toLowerCase());
