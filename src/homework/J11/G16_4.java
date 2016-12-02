@@ -2,7 +2,6 @@ package homework.J11;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.text.DecimalFormat;
 
@@ -11,7 +10,7 @@ import java.text.DecimalFormat;
  */
 public class G16_4 extends JFrame{
     public static void main(String[] args){
-        Calculator calculator = new Calculator();
+        new Calculator();
     }
 
 }
@@ -55,24 +54,20 @@ class Calculator extends JFrame{
         this.setVisible(true);
 
 
-        ActionListener OnClick = new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                double n1 = Double.parseDouble(jf1.getText());
-                double n2 = Double.parseDouble(jf2.getText());
-                switch (e.getActionCommand()){
-                    case "Add": result = n1 + n2; break;
-                    case "Subtract": result = n1 - n2; break;
-                    case "Multiply": result = n1 * n2; break;
-                    case "Divide": if (n2 == 0) { jf3.setText("除数不能为0"); break;}
-                        result = n1 / n2; break;
-                    default:break;
-                }
-                DecimalFormat format = new DecimalFormat();
-                format.setMaximumFractionDigits(4);
-                if (jf3.getText() != "") jf3.setText(format.format(result) + "");
+        ActionListener OnClick = e -> {
+            double n1 = Double.parseDouble(jf1.getText());
+            double n2 = Double.parseDouble(jf2.getText());
+            switch (e.getActionCommand()){
+                case "Add": result = n1 + n2; break;
+                case "Subtract": result = n1 - n2; break;
+                case "Multiply": result = n1 * n2; break;
+                case "Divide": if (n2 == 0) { jf3.setText("除数不能为0"); break;}
+                    result = n1 / n2; break;
+                default:break;
             }
+            DecimalFormat format = new DecimalFormat();
+            format.setMaximumFractionDigits(4);
+            if (jf3.getText() != "") jf3.setText(format.format(result) + "");
         };
 
         AddJbt.addActionListener(OnClick);
