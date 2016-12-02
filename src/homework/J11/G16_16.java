@@ -19,6 +19,7 @@ class Show extends JFrame{
     public Show(){
         jLabel.setHorizontalAlignment(SwingConstants.CENTER);
         jLabel.setVerticalAlignment(SwingConstants.CENTER);
+        jLabel.setForeground(Color.WHITE);
         this.add(jLabel);
         this.setSize(500,250);
         this.setVisible(true);
