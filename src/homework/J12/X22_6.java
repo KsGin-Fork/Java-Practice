@@ -19,13 +19,13 @@ public class X22_6 {
 }
 
 class Show extends JFrame {
-    JTextField jtread = new JTextField(20);
+    JTextField jtread = new JTextField(25);
     Set<Double> numberSet = new HashSet<>();
     public Show() {
         this.setLayout(new FlowLayout(FlowLayout.CENTER));
         this.add(new JLabel("Enter number : "));
 
-        JTextField jt = new JTextField(10);
+        JTextField jt = new JTextField(15);
         jt.addKeyListener(new KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent e) {
@@ -44,8 +44,6 @@ class Show extends JFrame {
             }
         });
         this.add(jt);
-
-        jtread.enableInputMethods(false);
         this.add(jtread);
 
         JButton jbt_sort = new JButton("Sort");
