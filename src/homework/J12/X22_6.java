@@ -20,7 +20,7 @@ public class X22_6 {
 
 class Show extends JFrame {
     JTextField jtread = new JTextField(20);
-    Set<Integer> integerSet = new HashSet<>();
+    Set<Double> numberSet = new HashSet<>();
     public Show() {
         this.setLayout(new FlowLayout(FlowLayout.CENTER));
         this.add(new JLabel("Enter number : "));
@@ -31,9 +31,9 @@ class Show extends JFrame {
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER){
                     try {
-                        integerSet.add(Integer.parseInt(jt.getText()));
+                        numberSet.add(Double.parseDouble(jt.getText()));
                         jtread.setText("");
-                        for (Integer n : integerSet) {
+                        for (Double n : numberSet) {
                             jtread.setText(jtread.getText() + n + " ");
                         }
                         jt.setText("");
@@ -65,11 +65,11 @@ class Show extends JFrame {
     }
 
     private void Sort(){
-        Integer[] ints = new Integer[integerSet.size()];
-        integerSet.toArray(ints);
-        Arrays.sort(ints);
+        Double[] doubles = new Double[numberSet.size()];
+        numberSet.toArray(doubles);
+        Arrays.sort(doubles);
         String text = "";
-        for (Integer i : ints){
+        for (Double i : doubles){
             text += (i + " ");
         }
         jtread.setText(text);
@@ -77,13 +77,13 @@ class Show extends JFrame {
 
     public void Shuffle(){
         String text = "";
-        Integer[] ints = new Integer[integerSet.size()];
-        integerSet.toArray(ints);
-        for (int i = integerSet.size() - 1 ; i >= 0  ; --i){
+        Double[] doubles = new Double[numberSet.size()];
+        numberSet.toArray(doubles);
+        for (int i = numberSet.size() - 1 ; i >= 0  ; --i){
             int index = (int)(Math.random() * i);
-            text += ints[index] + " ";
-            for (int j = index ; j < integerSet.size() - 1 ; ++j){
-                ints[j] = ints[j+1];
+            text += doubles[index] + " ";
+            for (int j = index ; j < numberSet.size() - 1 ; ++j){
+                doubles[j] = doubles[j+1];
             }
         }
         jtread.setText(text);
@@ -91,12 +91,12 @@ class Show extends JFrame {
 
     public void Reverse(){
         String text = "";
-        List<Integer> integerList = new LinkedList<>();
+        List<Double> integerList = new LinkedList<>();
         Matcher m = Pattern.compile("\\b([\\-0-9.]+)\\b").matcher(jtread.getText());
         while (m.find()){
-            integerList.add(Integer.parseInt(m.group(1)));
+            integerList.add(Double.parseDouble(m.group(1)));
         }
-        for (Integer i : integerList){
+        for (Double i : integerList){
             text = i + " " + text;
         }
         jtread.setText(text);
