@@ -92,7 +92,7 @@ class Show extends JFrame {
     public void Reverse(){
         String text = "";
         List<Integer> integerList = new LinkedList<>();
-        Matcher m = Pattern.compile("\\b([0-9.]+)\\b").matcher(jtread.getText());
+        Matcher m = Pattern.compile("\\b([\\-0-9.]+)\\b").matcher(jtread.getText());
         while (m.find()){
             integerList.add(Integer.parseInt(m.group(1)));
         }
