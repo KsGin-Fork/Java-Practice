@@ -96,7 +96,7 @@ class Show extends JFrame {
         }
         for (Double i : integerList){
             text = i + " " + text;
-        }
         jtread.setText(text);
+    }
     }
 }
