@@ -1,6 +1,7 @@
 package homework.J14;
 
 import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 /**
  * Created by KsGin on 12/22/2016.
@@ -8,7 +9,7 @@ import java.util.concurrent.Executors;
 //没有找到程序清单21.9
 public class T29_1 {
     public static void main(String[] args){
-        Executor threads = Executors.newFixedThreadPool(3);
+        ExecutorService threads = Executors.newFixedThreadPool(3);
         threads.execute(new Thread(() -> {
             for (int i = 0 ; i < 1000 ; ++i){
                 System.out.print("A");
@@ -24,6 +25,6 @@ public class T29_1 {
                 System.out.print(i);
             }
         }));
-
+        threads.shutdown();
     }
 }
