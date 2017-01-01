@@ -1,6 +1,5 @@
 package homework.J14;
 
-import javax.sound.midi.Soundbank;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -17,7 +16,7 @@ public class T29_4P {
         }
         executorService.shutdown();
 
-        //无限循环判断1000个线程是否全部结束任务关闭
+        //鏃犻檺寰幆鍒ゆ柇1000涓嚎绋嬫槸鍚﹀叏閮ㄧ粨鏉熶换鍔″叧闂�        
         while (true){
             if (executorService.isTerminated()){
                 System.out.println(sum.getSum());
@@ -28,7 +27,7 @@ public class T29_4P {
 
 }
 
-//包装
+//鍖呰
 class Integer{
     private int sum;
 
@@ -36,7 +35,7 @@ class Integer{
         this.sum = sum;
     }
 
-    //锁同步
+    //閿佸悓姝�    
     public synchronized void PlusSum(){
         ++sum;
     }

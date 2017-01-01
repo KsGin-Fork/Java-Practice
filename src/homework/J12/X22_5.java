@@ -21,8 +21,8 @@ public class X22_5 {
                 }
                 br.close();
                 fr.close();
-                // Matcher m = Pattern.compile("\\b(\\w+)\\b").matcher(buf);        //数字也在
-                Matcher m = Pattern.compile("(?:\\b|'|\")([a-zA-Z\\-\\x0d\\x0a]{2,})(?:\\b|'|\")").matcher(buf);     //只是单词 单字不匹配
+                // Matcher m = Pattern.compile("\\b(\\w+)\\b").matcher(buf);        //鏁板瓧涔熷湪
+                Matcher m = Pattern.compile("(?:\\b|'|\")([a-zA-Z\\-\\x0d\\x0a]{2,})(?:\\b|'|\")").matcher(buf);     //鍙槸鍗曡瘝 鍗曞瓧涓嶅尮閰�               
                 List<String> stringArrayList = new ArrayList<>();
                 while(m.find()){
                     stringArrayList.add(m.group(1).toLowerCase());

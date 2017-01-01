@@ -4,10 +4,10 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * Created by 杨帆 on 2016/9/21.
+ * Created by 鏉ㄥ竼 on 2016/9/21.
  */
 
-//使用毫秒作为计量单位会都因为太小变成0   所以取纳秒作为计量单位
+//浣跨敤姣浣滀负璁￠噺鍗曚綅浼氶兘鍥犱负澶皬鍙樻垚0   鎵�互鍙栫撼绉掍綔涓鸿閲忓崟浣�
 public class E6_16 {
     private static int arrayCount = 100000;
     public static void main(String[] args){
@@ -23,14 +23,14 @@ public class E6_16 {
         long Execution = end - start;
         System.out.println("The times of initialization is : " + Execution + "ns");
 
-        //输出顺序查找时间
+        //杈撳嚭椤哄簭鏌ユ壘鏃堕棿
         long startTime = System.nanoTime();
         LinearSearch(intArray,randIntNumber);
         long endTime = System.nanoTime();
         long ExecutionTime = endTime - startTime;
         System.out.println("The times of using LinearSearch() is : " + ExecutionTime + "ns");
 
-        //输出折半查找时间
+        //杈撳嚭鎶樺崐鏌ユ壘鏃堕棿
         Arrays.sort(intArray);
         startTime = System.nanoTime();
         Arrays.binarySearch(intArray,randIntNumber);

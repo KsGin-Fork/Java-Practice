@@ -3,7 +3,7 @@ package homework.J04;
 import java.util.Scanner;
 
 /**
- * Created by 杨帆 on 2016/9/22.
+ * Created by 鏉ㄥ竼 on 2016/9/22.
  */
 public class E10_7 {
     public static void main(String[] args){
@@ -17,9 +17,8 @@ public class E10_7 {
 }
 
 class ATM{
-    private int[] idList;  //初始化
-    private double[] balanceList;  //初始化
-
+    private int[] idList;  //鍒濆鍖�    
+    private double[] balanceList;  //鍒濆鍖�
     public ATM(int[] idList , double[] balanceList){
         this.idList = idList;
         this.balanceList = balanceList;

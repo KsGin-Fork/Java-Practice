@@ -9,7 +9,11 @@ import java.awt.RenderingHints;
  * Created by YangFan on 2016/10/4.
  */
 public class ChineseFlag extends JFrame {
-    private int width = 288 , height = width/3*2;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private int width = 288 , height = width/3*2;
     private double maxR = 0.15 , minR = 0.05;
     private double maxX = 0.50, maxY = 0.50;
     private double[] minX = {0.75, 0.85, 0.85, 0.75};
