@@ -19,7 +19,6 @@ public class Main {
             name = input.next();
             if (name.equals("noname")) break;
             score = input.nextDouble();
-            System.out.println(name + " : " + score);
             hashmap.put(name , score * 0.21);
         }
 
@@ -27,7 +26,7 @@ public class Main {
 
         System.out.println(hashmap.get(SearchName) == null ? "Not Found" : hashmap.get(SearchName));
 
-
+        input.close();
 
     }
 }

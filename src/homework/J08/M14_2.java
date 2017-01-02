@@ -14,7 +14,7 @@ public class M14_2 {
 }
 
 
-class ComparableCircle extends Circle implements Comparable{
+class ComparableCircle extends Circle implements Comparable<Object>{
 
     public ComparableCircle(double radius){
         super(radius);

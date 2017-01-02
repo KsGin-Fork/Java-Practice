@@ -29,6 +29,7 @@ public class NumberException {
                 }
             }
             System.out.print("Sum is " + (num1+num2) );
+            cin.close();
         }
 
     }

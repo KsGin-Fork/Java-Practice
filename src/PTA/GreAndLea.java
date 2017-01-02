@@ -9,6 +9,7 @@ public class GreAndLea {
         int m = scanner.nextInt();
         int n = scanner.nextInt();
         System.out.print(f(m,n) + " " + m * n / f(m, n));
+        scanner.close();
     }
     public static int f(int m, int n) {
         int c;

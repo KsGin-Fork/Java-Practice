@@ -9,8 +9,7 @@ public class InsertSort {
             Double[] s = {1d , 3.2d , 4d , 2d};
             Sort(s);
             for (Double x : s){
-                System.out.println(x +
-                " ");
+                System.out.println(x + " ");
             }
         }
 

@@ -18,5 +18,6 @@ public class Pri {
         for(int i = 0 ; i < m ;i++){
             System.out.println(newbig = newbig.nextProbablePrime());
         }
+        cin.close();
     }
 }

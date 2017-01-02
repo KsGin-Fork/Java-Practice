@@ -1,6 +1,12 @@
 package homework.J13;
 
-import java.io.*;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * Created by KsGin on 12/16/2016.
@@ -31,7 +37,8 @@ public class S19_3 {
     public static double Read(){
         double sum = 0d;
         try {
-            DataInputStream d = new DataInputStream(new FileInputStream(new File("Exercise19_3.dat")));
+            @SuppressWarnings("resource")
+			DataInputStream d = new DataInputStream(new FileInputStream(new File("Exercise19_3.dat")));
             while (true){
                 sum += d.readInt();
             }

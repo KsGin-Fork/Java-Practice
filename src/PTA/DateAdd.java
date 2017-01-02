@@ -16,5 +16,6 @@ public class DateAdd {
         System.out.println(gc.get(GregorianCalendar.YEAR ) + "-" + (gc.get(GregorianCalendar.MONTH) + 1 ) + "-" + gc.get(GregorianCalendar.DAY_OF_MONTH));
         gc.setTimeInMillis(num1 + (long) numDay * 24 * 60 * 60 * 1000);
         System.out.println(gc.get(GregorianCalendar.YEAR ) + "-" + (gc.get(GregorianCalendar.MONTH) + 1 ) + "-" + gc.get(GregorianCalendar.DAY_OF_MONTH));
+        scanner.close();
     }
 }

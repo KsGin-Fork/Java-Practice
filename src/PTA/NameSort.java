@@ -22,5 +22,6 @@ public class NameSort {
         for (int i = 0 ; i < len ; i++){
             System.out.println(arrStr[i]);
         }
+        scanner.close();
     }
 }

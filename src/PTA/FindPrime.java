@@ -17,5 +17,6 @@ public class FindPrime {
                 --b2;
             }
         }
+        cin.close();
     }
 }
