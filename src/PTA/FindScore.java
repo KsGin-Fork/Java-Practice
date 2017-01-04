@@ -3,26 +3,28 @@ package PTA;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class GetScore {
+public class FindScore {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		HashMap<String, Double> hashmap = new HashMap<>();
+		HashMap<String, Double> studentScore = new HashMap<>();
 
         Scanner input=new Scanner(System.in);
         String name ;
         Double score;
+        
+        //输入循环
         while(true)
         {
             name = input.next();
             if (name.equals("noname")) break;
             score = input.nextDouble();
-            hashmap.put(name , score * 0.21);
+            studentScore.put(name , score * 0.21);
         }
 
         String SearchName = input.next();
 
-        System.out.println(hashmap.get(SearchName) == null ? "Not found." : hashmap.get(SearchName));
+        System.out.println(studentScore.get(SearchName) == null ? "Not found." : studentScore.get(SearchName));
 
         input.close();
 	}
