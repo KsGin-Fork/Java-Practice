@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class ReplaceStr {
     public static void main(String[] args){
-    	List<String> arrStrings = new ArrayList<String>();
+    	List<String> arrStrings = new ArrayList<>();
         String str = "";
         String tmp;
         Scanner scanner = new Scanner(System.in);

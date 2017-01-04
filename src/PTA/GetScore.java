@@ -12,7 +12,6 @@ public class GetScore {
         Scanner input=new Scanner(System.in);
         String name ;
         Double score;
-
         while(true)
         {
             name = input.next();
@@ -23,9 +22,10 @@ public class GetScore {
 
         String SearchName = input.next();
 
-        System.out.println(hashmap.get(SearchName) == null ? "Not found" : hashmap.get(SearchName));
+        System.out.println(hashmap.get(SearchName) == null ? "Not found." : hashmap.get(SearchName));
 
         input.close();
 	}
+
 
 }

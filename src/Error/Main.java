@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main{
 
     public static void main(String[] args) {
 
@@ -14,13 +14,12 @@ public class Main {
         String name ;
         Double score;
 
-        while(true)
-        {
+        do {
             name = input.next();
             if (name.equals("noname")) break;
             score = input.nextDouble();
-            hashmap.put(name , score * 0.21);
-        }
+            hashmap.put(name, score * 0.21);
+        } while (true);
 
         String SearchName = input.next();
 
@@ -29,4 +28,6 @@ public class Main {
         input.close();
 
     }
+
 }
+
