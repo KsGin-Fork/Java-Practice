@@ -1,4 +1,4 @@
-package play;
+package PTA;
 
 /**
  * Created by KsGin on 12/7/2016.
@@ -12,7 +12,6 @@ public class InsertSort {
                 System.out.println(x + " ");
             }
         }
-
 
         public static <E extends Comparable<E>> void Sort(E[] list){
                 for (int i = 0 ; i < list.length ; ++i){

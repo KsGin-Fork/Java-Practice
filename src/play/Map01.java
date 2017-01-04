@@ -11,7 +11,7 @@ public class Map01 {
     public static void main(String[] args){
 
 
-        Map<String , String> map = new HashMap<>();
+        HashMap<String, String> map = new HashMap<>();
 
         map.put("California","Sacramento");
         map.put("Georgia","Atlanta");

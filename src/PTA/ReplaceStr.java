@@ -10,17 +10,12 @@ public class ReplaceStr {
         String str = "";
         String tmp;
         Scanner scanner = new Scanner(System.in);
-        while (!(tmp = scanner.nextLine()).equals("end")){
-        	arrStrings.add(tmp);
-        }
+        while (!(tmp = scanner.nextLine()).equals("end")) arrStrings.add(tmp);
         String oldStr = scanner.nextLine();
         String newStr = scanner.nextLine();
-        for (String string : arrStrings) {
-			str = str + string;
-		}
+        for (String string : arrStrings) str = str + string;
         scanner.close();
         str = str.replaceAll(oldStr , newStr);
         System.out.println(str);
     }
-    
 }
