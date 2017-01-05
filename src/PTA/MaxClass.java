@@ -25,8 +25,7 @@ public class MaxClass {
 		cin.close();
 	}
 
-	@SuppressWarnings("unchecked")
-	public static Object max(@SuppressWarnings("rawtypes") Comparable[] A){
+	public static Object max(Comparable[] A){
 		Object max = A[0];
 		
 		for (int i = 1; i < A.length; i++) {
