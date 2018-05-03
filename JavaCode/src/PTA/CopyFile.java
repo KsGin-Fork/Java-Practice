@@ -1,14 +1,14 @@
-package com.ksgin;
+package PTA;
 
 import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 
-public class Main {
+public class CopyFile {
 
     public static void main(String[] args) throws IOException {
-	    // write your code here
+        // write your code here
 
         copyFileUsingStream("./Resources/Book.zip" , "./Resources/BookBackup1.zip");
         copyFileUsingBuffer("./Resources/Book.zip" , "./Resources/BookBackup2.zip");
